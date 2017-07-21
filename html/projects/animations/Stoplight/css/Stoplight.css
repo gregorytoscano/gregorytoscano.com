@@ -1,0 +1,25 @@
+svg{
+	width: 800px; 
+	height: 800px;
+}
+
+#stoplight{
+	fill: black;
+}
+
+#redlight{
+    fill: red;
+    opacity: 0.5;
+}
+
+#yellowlight{
+	fill: yellow;
+	opacity: 0.5;
+}
+
+#greenlight {
+	fill: green;
+	opacity: 0.5;
+}
+
+

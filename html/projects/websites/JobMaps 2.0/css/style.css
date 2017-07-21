@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+html, .container-table { height: 100% }
+body { height: 100%; margin: 0; padding-top: 70px }
+#map-canvas { width: 50%; height: 100%; float: right;}
+#resultTable {width: 50%; height: auto; float: left;}
+ 
+ .navbar {
+      margin-bottom: 0;
+      background-color: #FFF;
+      z-index: 9999;
+      border: 0;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: orange !important;
+  }
+
+ @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+	
+  }
+
+
+
+  div.pagination {
+  padding: 3px;
+  margin: 3px;
+}
+
+div.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #AAAADD;
+  
+  text-decoration: none; /* no underline */
+  color: #000099;
+}
+div.pagination a:hover, div.pagination a:active {
+  border: 1px solid #000099;
+
+  color: #000;
+}
+div.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+    border: 1px solid #000099;
+    
+    font-weight: bold;
+    background-color: #000099;
+    color: #FFF;
+  }
+  div.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #EEE;
+  
+    color: #DDD;
+  }
+  
+
+/************************ Orange Search Button ******************************/
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fed897;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fed897;
+	box-shadow:inset 0px 1px 0px 0px #fed897;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF6600), color-stop(1, #FF6600) );
+	background:-moz-linear-gradient( center top, #FF6600 5%, #d29105 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6600', endColorstr='#FF6600');
+	background-color:#f6b33d;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #eda933;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:150px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #cd8a15;
+}
+.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F60), color-stop(1, #F60) );
+	background:-moz-linear-gradient( center top, #F60 5%, #F60 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F60', endColorstr='#F60');
+	background-color:#d29105;
+}.classname:active {
+	position:relative;
+	top:1px;}
+/******************* End of Orange Search Button ***************************/
+
+
+/************************ Centering Body Search ****************************/
+.container-table{ 
+	display: table;
+}
+
+.vertical-center-row {
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/***************** End of Centering Body Search ***************************/
+
+.panel{
+	border: 1px black;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}

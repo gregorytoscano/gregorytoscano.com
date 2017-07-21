@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toggle Button</title>
+	<!-- CSS Libs -->
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="lib/css/bootstrap/bootstrap.min.css">
+
+	<!-- Google-Code-Prettify -->
+	<link rel="stylesheet" href="vendors/google-code-prettify/bin/prettify.min.css">
+	
+	<!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+       <script src="vendors/html5shiv/html5shiv/dist/html5shiv.js"></script>
+       <script src="vendors/respondjs/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="container" style="padding-top: 20px;">
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+		<h3 class="text-center">Toggle Button Animation</h3>
+			<div class="row">
+			    <a class="xs-canvas-toggle" id="toggle_button" style="cursor: pointer">
+			        <div class="menu">
+			            <div class="top-bar-xs center-block"></div>
+			            <div class="middle-bar-xs center-block"></div>
+			            <div class="bottom-bar-xs center-block"></div>
+			        </div>
+			    </a>
+			</div>
+			<p class="text-center">To see the code click to toggle.</p>
+		</div>
+		<div class="col-md-2">
+		</div>
+
+	</div>
+	<div class="row">
+	    <hr />
+		<div class="col-md-4" id="showcode_html">
+		<h3 class="text-center">HTML</h3>
+			<pre class="prettyprint lang-html" >
+// Position with Bootstrap how you'd like
+&lt;div class="row"&gt;
+    &lt;a class="canvas-toggle" href="#"&gt;
+        &lt;div class="menu"&gt;
+            &lt;div class="top-bar"&gt;&lt;/div&gt;
+            &lt;div class="middle-bar"&gt;&lt;/div&gt;
+            &lt;div class="bottom-bar"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+			</pre>
+		</div>
+
+		<div class="col-md-4" id="showcode_css">
+		<h3 class="text-center">CSS</h3>
+			<pre class="prettyprint lang-css" scrollable>
+.canvas-toggle .menu {
+  display: block;
+}
+
+.exit-off-canvas{
+  box-shadow: none;
+}
+
+.top-bar, .middle-bar, .bottom-bar {
+  display:block;
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 4px;
+  transition: transform 1s
+  cubic-bezier(1, 0, 0, 1) 0,
+  background-color 0.6s ease 0;
+}
+
+.middle-bar{
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.top-bar, .bottom-bar {
+  transform-origin: 100% 50%;
+}
+
+.top-bar-close{
+  transform: rotate(-45deg);
+  background-color: grey;
+}
+
+.middle-bar-close{
+  opacity: 0;
+  transition-property:opacity;
+  transition-duration: 0.8s;
+}
+
+.bottom-bar-close{
+  transform: rotate(45deg);
+  background-color: grey;
+}
+
+			</pre>
+		</div>
+		<div class="col-md-4" id="showcode_js">
+		<h3 class="text-center">Javascript</h3>
+			<pre class="prettyprint lang-html" >
+&lt;script type="text/javascript"&gt;
+$(function(){
+	$(".canvas-toggle, .exit-off-canvas").click(function(){
+	$(".top-bar").toggleClass("top-bar-close");
+	$(".middle-bar").toggleClass("middle-bar-close");		
+	$(".bottom-bar").toggleClass("bottom-bar-close");
+	});
+});
+&lt;/script&gt;
+			</pre>
+		</div>    	
+	</div>
+</div>
+
+
+<!-- Javascripts Libs -->
+<script src="vendors/jquery/dist/jquery.js"></script>
+<script src="js/toggle.js"></script>
+
+<!-- Bootstrap -->
+<script src="lib/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Google-Code-Prettify -->
+<script src="vendors/google-code-prettify/bin/prettify.min.js"></script>
+<script src="vendors/google-code-prettify/bin/run_prettify.min.js"></script>
+<script src="vendors/google-code-prettify/src/prettify.js"></script>
+<script src="vendors/google-code-prettify/src/lang-css.js"></script>
+
+
+
+</body>
+</html>

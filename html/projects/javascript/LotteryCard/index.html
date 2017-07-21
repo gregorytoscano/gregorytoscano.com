@@ -1,0 +1,103 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<script type="text/javascript" src="js/lottery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-3 text-center">
+		Each Ticket Costs $1 <br />
+		<b>Jackpot:</b> $10,000<br />
+		<b>5 Numbers:</b> $1,000<br />
+		<b>4 Numbers:</b> $100<br />
+		<b>3 Numbers:</b> $50<br />
+		<b>2 Numbers:</b> $10<br />
+		<b>1 Number: </b> $1<br />
+		
+		<h3>Wallet:&nbsp; $<span id="wallet">0</span></h3>
+		<button type="button" class="btn btn-success center-block" onclick="addMoney()"> Add $5 </button>
+		<br />
+	</div>
+	
+	<div class="col-md-6" >
+		<div class="lotteryTicket center-block">
+			<h2 class="text-center" style="color: white; vertical-align: middle;">
+				<span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+				Christmas Scratch Off 
+				<span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+			</h2>
+			<hr style="color: white; border: 3px dashed;" />
+			<div class="row">
+				<div class="container-fluid">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<div id="winnerBox" class="text-center center-block">
+						<span id="winningNumber" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:white;"></span>
+					</div>
+				</div>
+				<div class="col-md-5"></div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="container-fluid">
+					<div class="col-md-2">
+						<div id="playBox1" class="text-center center-block">
+							<span id="num1" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div id="playBox2" class="text-center center-block">
+							<span id="num2" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div id="playBox3" class="text-center center-block">
+							<span id="num3" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div id="playBox4" class="text-center center-block">
+							<span id="num4" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div id="playBox5" class="text-center center-block">
+							<span id="num5" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div id="playBox6" class="text-center center-block">
+							<span id="num6" style="font-size:3em"><span class="glyphicon glyphicon-tree-conifer" style="color:green;"></span>
+						</div>
+					</div>
+					<br />&nbsp;	
+				</div>
+			</div>
+		</div><!-- ./lotteryTicket-->
+	</div>
+
+	<div class="col-md-3"></div>
+</div>
+<br />
+<div class="row">
+	<div class="col-md-4 text-right"> 
+	</div>
+	<div class="col-md-4 text-center">
+		<button type="button" class="btn btn-danger btn-lg center-block" role="button" onclick="play();"> Play Game </button>
+		<br/>
+		<span id="wincheck"></span>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+
+</div>
+</body>
+</html>

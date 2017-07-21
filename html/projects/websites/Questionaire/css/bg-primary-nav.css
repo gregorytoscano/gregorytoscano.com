@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%;  
+  margin: 0;
+  padding: 0;
+}
+
+
+/** Random **/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear-both {
+  clear: both; 
+}
+
+.slideanim {
+  visibility:hidden;
+}
+  
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;  
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible;      
+}
+
+.spacer{
+  padding: 10px;
+}
+
+.footspacer{
+  padding: 50px;
+}
+
+.overflow_hidden {
+  overflow: hidden; 
+}
+/** End of Random **/
+
+/** Navbar **/
+.navbar 
+{ 
+  background-color: #337ab7; 
+  z-index: 9999;
+  border: 0;
+  margin: 0;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 1px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+} 
+
+.navbar .navbar-brand 
+{ 
+  color: #ffffff; 
+} 
+
+/** FOR TEXT COLOR **/
+.navbar .navbar-nav > li > a 
+{ 
+  color: #ffffff;
+  -webkit-transition: 0.6s;
+      transition: 0.6s;
+} 
+
+/** HOVER COLOR **/
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus 
+{ 
+  color: #337ab7; 
+  background-color: #ffffff;  
+  -webkit-transition: 0.6s;
+      transition: 0.6s; 
+} 
+
+/** DROPDOWN BACKGROUND COLOR **/
+.navbar .navbar-nav > li > .dropdown-menu 
+{ 
+  background-color: #ffffff; 
+} 
+
+.navbar .navbar-nav > li > .dropdown-menu > li > a 
+{ 
+  color: #337ab7;
+} 
+
+/* THE HOVER EFFECT */
+.navbar .navbar-nav > li > .dropdown-menu > li > a:hover, .navbar .navbar-nav > li > .dropdown-menu > li > a:focus 
+{ 
+  color: #ffffff; 
+  background-color: #337ab7; 
+} 
+
+
+/* CHANGE TEXT COLOR ON HOVER BUTTONS*/
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus 
+{ 
+  color: #337ab7; 
+  background-color: #ffffff; 
+} 
+
+
+/*
+.navbar {
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #000;
+  text-decoration: none;
+	-webkit-transition: 0.6s;
+			transition: 0.6s;
+}
+  
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #000;
+	background-color: #EEE;
+  }
+
+.navbar-nav > li.dropdown.active.open > a, .navbar-nav > li.dropdown.active.open > ul.dropdown-menu a:hover, .navbar-nav > li.dropdown.open > a, .navbar-nav > li.dropdown.open > ul.dropdown-menu a:hover
+{
+  color: #000;
+  background-color: #EEE;
+}
+*/
+/** #337ab7 = COLOR FOR bg-primary **/
+/** End of Navbar **/
+
+
+
+/** Mobile Toggle Button **/
+.canvas-toggle .menu {
+  display: block;
+}
+
+.exit-off-canvas{
+  box-shadow: none;
+}
+
+.top-bar, .middle-bar, .bottom-bar {
+  display:block;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  transition: transform 1s
+  cubic-bezier(1, 0, 0, 1) 0,
+  background-color 0.6s ease 0;
+}
+
+.middle-bar{
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.top-bar, .bottom-bar {
+  transform-origin: 100% 50%;
+}
+
+.top-bar-close{
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.middle-bar-close{
+  opacity: 0;
+  transition-property:opacity;
+  transition-duration: 0.8s;
+}
+
+.bottom-bar-close{
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+/** End Mobile Toggle Button **/

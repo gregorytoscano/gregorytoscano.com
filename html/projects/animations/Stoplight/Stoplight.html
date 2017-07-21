@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Stoplight</title>
+<link href="css/Stoplight.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<section>
+<svg>
+<rect id="stoplight" x="30" y="0" height="308" width="100"></rect>
+<rect id="redlight" x="55" y="25" height="60" width="50"></rect>
+<animate xlink:href="#redlight" id="redlight2" attributeName="opacity" from=".5" to="1" dur="1s" begin="0s; greenlight2.end" min="4s"/>
+<rect id="yellowlight" x="55" y="125" height="60" width="50"></rect>
+<animate xlink:href="#yellowlight" id="yellowlight2" attributeName="opacity" from=".5" to="1" dur="1s" begin="redlight2.end;" min="2s"/>
+<rect id="greenlight" x="55" y="225" height="60" width="50"></rect>
+<animate xlink:href="#greenlight" id="greenlight2" attributeName="opacity" from=".5" to="1" dur="1s" begin="yellowlight2.end" min="4s"/>
+</svg>
+</section>
+
+</body>
+</html>
+
+<!--
+<line x1="100" y1="100" x2="400" y2="100" style="stroke: green; stroke-width:50" />
+<line x1="400" y1="0" x2="400" y2="600" style="stroke: green; stroke-width:50" />
+<rect x="300" y="600" height="100" width="200" fill="green"></rect>
+-->

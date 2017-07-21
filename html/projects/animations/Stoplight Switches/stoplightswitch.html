@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Stoplight Switch</title>
+<link href="css/stoplightswitch.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<section>
+<svg>
+<line x1="240" y1="50" x2="240" y2="125" style="stroke: black; stroke-width:6" />
+<rect x="155" y="100" height="175" width="100" fill="gray"></rect>
+<circle id="redbutton" cx="204" cy="135" r="20" stroke="black" stroke-width="3" fill="red"/>
+<circle id="yellowbutton" cx="204" cy="185" r="20" stroke="black" stroke-width="3" fill="yellow" />
+<circle id="greenbutton" cx="204" cy="235" r="20" stroke="black" stroke-width="3" fill="green" />
+ 
+<line x1="100" y1="55" x2="150" y2="155" style="stroke: black; stroke-width:4" />
+<line x1="100" y1="155" x2="155" y2="155" style="stroke: black; stroke-width:4" />
+<line x1="100" y1="250" x2="150" y2="155" style="stroke: black; stroke-width:4" />
+
+<rect id="stoplight" x="30" y="0" height="308" width="100"></rect>
+<rect id="redlight" x="55" y="25" height="60" width="50"></rect>
+<animate xlink:href="#redlight" id="redlight2" attributeName="opacity" from=".5" to="1" dur="1s" min="3s" max="10s" begin="redbutton.click"  end="yellowbutton.click; greenbutton.click"  />
+<rect id="yellowlight" x="55" y="125" height="60" width="50"></rect>
+<animate xlink:href="#yellowlight" id="yellowlight2" attributeName="opacity" from=".5" to="1" dur="1s" min="3s" max="10s" begin="yellowbutton.click" end="redbutton.click; greenbutton.click" />
+<rect id="greenlight" x="55" y="225" height="60" width="50"></rect>
+<animate xlink:href="#greenlight" id="greenlight2" attributeName="opacity" from=".5" to="1" dur="1s" min="3s" max="10s" begin="greenbutton.click" end="redbutton.click; greenbutton.click" />
+
+</svg></section>
+
+
+
+
+</body>
+</html>

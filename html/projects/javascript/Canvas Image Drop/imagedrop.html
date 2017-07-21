@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Image drop</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/dragdrop.js" type="text/Javascript"></script>
+</head>
+<body>
+<header>
+<h2>Drag a ball into the square</h2>
+<section>
+<p>Sports to choose from:</p>
+<div id="wrapper">
+     <img class="draggable" id="basketball" src="images/basketball.jpg" alt="Basketball" draggable="true" ondragstart="drag(event)">
+     <img class="draggable" id="baseball" src="images/baseball.jpg" alt="Baseball" draggable="true" ondragstart="drag(event)">
+     <img class="draggable" id="football" src="images/football.jpg" alt="Football" draggable="true" ondragstart="drag(event)">
+     <img class="draggable" id="soccerball" src="images/soccerball.jpg" alt="Soccer" draggable="true" ondragstart="drag(event)">
+     <br />
+     <div id="dislike">Dislike the sport</div>
+     <div id="like">Like the sport</div>
+     <br />
+     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+     <br />
+     <br />
+     <div id="reload">
+          <input type="button" onClick="history.go(0)" value=" Reset " id="reset">
+     </div>
+
+</div>
+
+</section>
+</body>
+</html>

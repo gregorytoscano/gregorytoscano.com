@@ -1,0 +1,40 @@
+.question {
+  margin: 10px;
+}
+
+.answer {
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+  width: 70%;
+  height: auto;
+}
+
+.first {
+  display: none;
+  height: 300px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+/** Grading Font **/
+/** Grading Font **/
+@font-face {
+  font-family: 'Handwriting';
+  src: url('Handwriting.otf') format('opentype');
+}
+
+#handwriting{
+	padding-top: 15px;
+ 	font-family: Handwriting;
+  	color: red;
+  	font-size: 4em;
+}
+
+#handwritingGrade{
+ 	font-family: Handwriting;
+  	color: red;
+  	font-size: 6em;
+}

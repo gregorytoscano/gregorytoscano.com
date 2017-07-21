@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GregoryToscano.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../lib/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/checkbox3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/select2.min.css">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../../lib/bootstrap-wysiwyg/google-code-prettify/src/prettify.css" rel="stylesheet" />
+    <link href="../../lib/bootstrap-wysiwyg/css/style.css" rel="stylesheet" />
+    <!-- Select2 -->
+    <link href="../../lib/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/themes/flat-blue.css">
+</head>
+
+<body class="flat-blue" id="top">
+    <div class="app-container">
+        <div class="row content-container">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li>Portfolio</li>
+                            <li class="active">Websites</li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        <li class="dropdown">
+                        <li class="dropdown profile">
+                            <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gregory Toscano <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <li class="profile-img">
+                                    <img src="../../img/profile/me.png" class="profile-img">
+                                </li>
+                                <li>
+                                    <div class="profile-info">
+                                        <h4 class="username">Gregory Toscano</h4>
+                                        <p>gibit09@gmail.com</p>
+                                        <div class="btn-group margin-bottom-2x" role="group">
+                                            <button type="button" data-toggle="modal" data-target="#modalEmail" class="btn btn-default" role="button"><i class="fa fa-envelope"></i> Email Me</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand">
+                                <img src="../../img/profile/me.png" style="padding-left: 5px;" class="img-responsive icon">
+                                <div class="title" style="padding-left: 10px;">Gregory Toscano</div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="../index.html">
+                                    <span class="icon fa fa-home"></span><span class="title">Home</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="html/cache/webcache.html"><span class="icon fa fa-desktop"></span><span class="title">Web Portfolio</span></a>
+                            </li>
+                            <li>
+                                <a href="../email/dormduels.html">
+                                    <span class="icon fa fa-envelope"></span><span class="title">DormDuels Email Page</span>
+                                </a>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-form">
+                                    <span class="icon fa fa-file-text-o"></span><span class="title">Other</span>
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown-form" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="../ui-kits/lego.html">Lego Animation</a>
+                                            </li>
+                                            <li><a href="../ui-kits/svg.html">SVG Projects</a>
+                                            </li>
+                                            <li><a href="../components/chartjs.html">Javascript Items</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <!-- Main Content -->
+            <div class="container-fluid">
+                <div class="side-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="thumbnail no-margin-bottom text-center">
+                                                <img src="../../img/cache/andycache.PNG" class="img-responsive">
+                                                <div class="caption">
+                                                    <h3 id="thumbnail-label">Andy Hackett Designs
+                                                        <a class="anchorjs-link" href="#thumbnail-label">
+                                                            <span class="anchorjs-icon"></span>
+                                                        </a>
+                                                    </h3>
+                                                    <p>
+                                                        While in college, my buddy started a restoration business and contacted me about building him a website. I created this site for him. For portfolio purposes I removed the ability to contact him. The website doesn't have a responsive UI but it is a future project. 
+                                                    </p>
+                                                    <p>
+                                                        <a href="../projects/websites/AndyHackettDesigns/index.html" target="_blank">
+                                                            <button type="button" class="btn btn-primary center-block form-control" role="button" >
+                                                                Visit Website
+                                                            </button>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="thumbnail no-margin-bottom text-center">
+                                                <img src="../../img/cache/jobmapcache.PNG" class="img-responsive">
+                                                <div class="caption">
+                                                    <h3 id="thumbnail-label">Job Maps (Under Construction)
+                                                        <a class="anchorjs-link" href="#thumbnail-label">
+                                                            <span class="anchorjs-icon"></span>
+                                                        </a>
+                                                    </h3>
+                                                    <p>
+                                                        This site was completed as part of a college project. Jobmaps is a job search site that displays the job on a Google Map based on the address. This site uses Google Map API and Geolocation API to convert the addresses into readable latitude/longitude for the map to read and display. 
+                                                    </p>
+                                                    <p>
+                                                        <a href="../projects/websites/JobMaps/index.php" target="_blank">
+                                                            <button type="button" class="btn btn-default center-block form-control" style="background-color: orange" role="button" >
+                                                                Visit Website
+                                                            </button>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="thumbnail no-margin-bottom text-center">
+                                                <img src="../../img/cache/heroincache.PNG" class="img-responsive">
+                                                <div class="caption">
+                                                    <h3 id="thumbnail-label">Heroin.net Demo Site
+                                                        <a class="anchorjs-link" href="#thumbnail-label">
+                                                            <span class="anchorjs-icon"></span>
+                                                        </a>
+                                                    </h3>
+                                                    <p>
+                                                        This is only a responsive demo site (no working links). I was asked to create a project for a heroin rehabilation center. This site's biggest feature is the view grid. I learned how to display columns and rows and toggle between the two, which is what this site showcases.
+                                                    </p>
+                                                    <p>
+                                                        <a href="../projects/websites/Heroin Site/index.html" target="_blank">
+                                                            <button type="button" class="btn btn-default center-block form-control" style="background-color: green; color: white;" role="button" >
+                                                                Visit Website
+                                                            </button>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="thumbnail no-margin-bottom text-center">
+                                                <img src="../../img/cache/quizcache.PNG" class="img-responsive">
+                                                <div class="caption">
+                                                    <h3 id="thumbnail-label">Multiple Choice Quiz
+                                                        <a class="anchorjs-link" href="#thumbnail-label">
+                                                            <span class="anchorjs-icon"></span>
+                                                        </a>
+                                                    </h3>
+                                                    <p>
+                                                        Using Bootstrap I created a Multiple Choice Quiz. This site is mobile friendly and while mobile, I customized the navbar 3 bar dropdown. When active it animates into an X. This grades you on your performance at the end. I used a teachers handwriting font to add that little extra something. 
+                                                    </p>
+                                                    <p>
+                                                        <a href="../projects/websites/Questionaire/index.html" target="_blank">
+                                                            <button type="button" class="btn btn-primary center-block form-control" role="button" >
+                                                                Visit Website
+                                                            </button>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of Container-Fluid -->
+        </div>
+        <footer class="app-footer">
+            <div class="wrapper">
+                <span class="pull-right"><a href="#top"><i class="fa fa-long-arrow-up"></i></a></span> &copy; Copyright.
+            </div>
+        </footer>
+    </div>
+
+<!-- ****************************************** MODALS ************************************************* -->
+
+<!-- Modal EMAIL-->
+<div class="modal fade modal-info" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Contact Me</h4>
+            </div><!--END MODAL HEADER -->
+            <div class="modal-body">
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control center-block" id="firstname" name="firstname" placeholder="Firstname"
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control center-block" id="lastname" name="lastname" placeholder="Lastname"
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control center-block" id="email" name="email" placeholder="Email Address"
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="textareabox">Type Message</label>
+                        <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                            <div class="btn-group">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size">
+                                    <i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a data-edit="fontSize 5" class="fs-Five">Huge</a></li>
+                                    <li><a data-edit="fontSize 3" class="fs-Three">Normal</a></li>
+                                    <li><a data-edit="fontSize 1" class="fs-One">Small</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="bold" title="Bold (Ctrl/Cmd+B)">
+                                    <i class="fa fa-bold"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="italic" title="Italic (Ctrl/Cmd+I)">
+                                    <i class="fa fa-italic"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="underline" title="Underline (Ctrl/Cmd+U)">
+                                    <i class="fa fa-underline"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="insertunorderedlist" title="Bullet list">
+                                    <i class="fa fa-list-ul"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="insertorderedlist" title="Number list">
+                                    <i class="fa fa-list-ol"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="outdent" title="Reduce indent (Shift+Tab)">
+                                    <i class="fa fa-outdent"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="indent" title="Indent (Tab)">
+                                    <i class="fa fa-indent"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)">
+                                    <i class="fa fa-align-left"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)">
+                                    <i class="fa fa-align-center"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)">
+                                    <i class="fa fa-align-right"></i>
+                                </a>
+                                <a class="btn btn-default" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)">
+                                    <i class="fa fa-align-justify"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <div class="dropdown-menu input-append">
+                                    <input placeholder="URL" type="text" data-edit="createLink" />
+                                    <button class="btn" type="button">Add</button>
+                                </div>
+                            </div>
+                        </div><!--END btn-toolbar -->
+                    </div><!--END form-group -->
+                    <div id="editor" class="lead" data-placeholder="Type Message Here..."></div>
+                    <div id="editorPreview"></div>                                            
+            </div><!-- END OF MODAL BODY -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal">Send</button>
+            </div><!--END MODAL FOOTER -->
+        </div><!--END MODAL CONTENT -->
+    </div><!--END MODAL DIALOG -->
+</div><!-- End of Modal EMAIL-->
+
+
+<!-- ****************************************** Javascript ************************************************* -->
+
+            <!-- Javascript Libs -->
+            <script type="text/javascript" src="../../lib/js/jquery.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/Chart.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/bootstrap-switch.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/jquery.matchHeight-min.js"></script>
+            <script type="text/javascript" src="../../lib/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/dataTables.bootstrap.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/select2.full.min.js"></script>
+            <script type="text/javascript" src="../../lib/js/ace/ace.js"></script>
+            <script type="text/javascript" src="../../lib/js/ace/mode-html.js"></script>
+            <script type="text/javascript" src="../../lib/js/ace/theme-github.js"></script>
+            <script type="text/javascript" src="../../lib/jquery.hotkeys/jquery.hotkeys.js"></script>
+            <script type="text/javascript" src="../../lib/google-code-prettify/src/prettify.js"></script>
+            <script type="text/javascript" src="../../lib/bootstrap-wysiwyg/src/bootstrap-wysiwyg.js"></script>
+            <!-- Javascript -->
+            <script type="text/javascript" src="../../js/app.js"></script>
+            <script type="text/javascript" src="../../js/index.js"></script>
+            <script type="text/javascript" src="../../../js/modal.js"></script>
+
+
+<script type='text/javascript'>
+    $('#editor').wysiwyg();
+            
+    $(".dropdown-menu > input").click(function (e) {
+        e.stopPropagation();
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

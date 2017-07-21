@@ -1,0 +1,80 @@
+.lotteryTicket {
+	display: block;
+	background-color: red;
+	width: 100%;
+	height: auto;
+	border: 4px dashed green;
+}
+
+#winnerBox{
+	display: block;
+	background-color: green;
+	width:55px;
+	height: 55px;
+	color: white;
+	border: 2px dashed white;
+}
+
+#playBox1{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+#playBox2{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+#playBox3{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+#playBox4{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+#playBox5{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+#playBox6{
+	display: block;
+	background-color: white;
+	width:55px;
+	height: 55px;
+	color: green;
+	border: 2px dashed green;
+}
+
+.btn-danger{
+	background-color: red;
+	border: 2px dashed green;
+}
+
+.btn-success{
+	background-color: green;
+	border: 2px dashed red;
+}
